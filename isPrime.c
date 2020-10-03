@@ -3,21 +3,16 @@
 #include <stdlib.h>
 
 
-int checkPrime(int n)
+int checkPrime(int a)
 {
-	if (n == 2)
-		return 1;
-
-	if (n % 2 == 0)
-		return 0;
-
-	for (int i = 3; i <= sqrt(n); i += 2)
-	{
-		if (n % i == 0)
-			return 0;
-	}
-
-	return 1;
+   int c;
+ 
+   for ( c = 2 ; c <= a - 1 ; c++ )
+   { 
+      if ( a%c == 0 )
+     return 0;
+   }
+   return 1;
 }
 
 
